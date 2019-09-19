@@ -13,14 +13,23 @@ export function activate(context: vscode.ExtensionContext) {
 		}
 
 		const doc: vscode.TextDocument = editor.document;
-		const b: vscode.Selection[] = editor.selections;
-		console.log(b[0]);
-		const start: vscode.Position = new vscode.Position(b[0].start.line, b[0].start.character);
-		const end: vscode.Position = new vscode.Position(b[0].end.line, b[0].end.character);
-		const range: vscode.Range = new vscode.Range(start, end);
-		console.log(range);
-		let a = doc.getText(range);
-		console.log(a);
+		const selectedNumber: vscode.Selection[] = editor.selections;
+		console.log(selectedNumber.length)
+		if (selectedNumber.length > 2) {
+			vscode.window.showErrorMessage("Exceeded selection.");
+			return;
+		}
+		const firstStartPosition: vscode.Position = new vscode.Position(selectedNumber[0].start.line, selectedNumber[0].start.character);
+		const firstEndPosition: vscode.Position = new vscode.Position(selectedNumber[0].end.line, selectedNumber[0].end.character);
+		const secondStartPosition: vscode.Position = new vscode.Position(selectedNumber[1].start.line, selectedNumber[1].start.character);
+		const secondEndPosition: vscode.Position = new vscode.Position(selectedNumber[1].end.line, selectedNumber[1].end.character);
+		const firstElementRange: vscode.Range = new vscode.Range(firstStartPosition, firstEndPosition);
+		const secondElementRange: vscode.Range = new vscode.Range(secondStartPosition, secondEndPosition);
+		let firstElement: string = doc.getText(firstElementRange);
+		let secondElement: string = doc.getText(secondElementRange);
+		console.log(firstElement, secondElement);
+		[firstElement, secondElement] = [secondElement, firstElement];
+		console.log(firstElement, secondElement);
 		vscode.window.showInformationMessage("aaa");
 	});
 
