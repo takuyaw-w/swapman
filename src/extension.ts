@@ -5,7 +5,6 @@ export function activate(context: vscode.ExtensionContext) {
 	console.log('Congratulations, your extension "swapman" is now active!');
 
 	let disposable = vscode.commands.registerCommand('extension.helloWorld', () => {
-		
 
 		const editor: vscode.TextEditor | undefined = vscode.window.activeTextEditor;
 		if (!editor) {
@@ -14,7 +13,6 @@ export function activate(context: vscode.ExtensionContext) {
 
 		const doc: vscode.TextDocument = editor.document;
 		const selectedNumber: vscode.Selection[] = editor.selections;
-		console.log(selectedNumber.length)
 		if (selectedNumber.length > 2) {
 			vscode.window.showErrorMessage("Exceeded selection.");
 			return;
@@ -27,10 +25,12 @@ export function activate(context: vscode.ExtensionContext) {
 		const secondElementRange: vscode.Range = new vscode.Range(secondStartPosition, secondEndPosition);
 		let firstElement: string = doc.getText(firstElementRange);
 		let secondElement: string = doc.getText(secondElementRange);
-		console.log(firstElement, secondElement);
 		[firstElement, secondElement] = [secondElement, firstElement];
-		console.log(firstElement, secondElement);
-		vscode.window.showInformationMessage("aaa");
+		editor.edit(builder => {
+			builder.replace(firstElementRange, firstElement);
+			builder.replace(secondElementRange, secondElement);
+		});
+		vscode.window.showInformationMessage("Swaaaaaaaaaaaaaaaaaap!!!!!");
 	});
 
 	context.subscriptions.push(disposable);
