@@ -11,4 +11,4 @@ Provides the ability to swap two words.
 
 ### 1.0.0
 
-Initial release of ...
+Initial release.
