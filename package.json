@@ -2,9 +2,12 @@
 	"name": "swapman",
 	"displayName": "swapman",
 	"description": "Provides the ability to swap two words.",
-	"version": "1.0.0",
+	"version": "0.1.0",
 	"publisher": "takuyaw-w",
 	"license": "MIT",
+	"engines": {
+		"vscode": "^1.38.0"
+	},
 	"categories": [
 		"Other"
 	],
