@@ -2,7 +2,7 @@
 	"name": "swapman",
 	"displayName": "swapman",
 	"description": "Swap two variables.",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"engines": {
 		"vscode": "^1.38.0"
 	},
