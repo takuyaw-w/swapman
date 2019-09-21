@@ -1,12 +1,12 @@
 {
 	"name": "swapman",
 	"displayName": "swapman",
-	"description": "Swap two variables.",
+	"description": "Provides the ability to swap two words.",
 	"version": "1.0.0",
 	"publisher": "takuyaw-w",
 	"license": "MIT",
 	"engines": {
-		"vscode": "^1.38.0"
+		"vscode": "1.38.1"
 	},
 	"categories": [
 		"Other"
