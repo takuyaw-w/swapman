@@ -3,6 +3,7 @@
 	"displayName": "swapman",
 	"description": "Swap two variables.",
 	"version": "1.0.0",
+	"publisher": "takuyaw-w",
 	"engines": {
 		"vscode": "^1.38.0"
 	},
