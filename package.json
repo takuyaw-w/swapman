@@ -4,6 +4,7 @@
 	"description": "Swap two variables.",
 	"version": "1.0.0",
 	"publisher": "takuyaw-w",
+	"license": "MIT license",
 	"engines": {
 		"vscode": "^1.38.0"
 	},
