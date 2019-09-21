@@ -6,7 +6,7 @@
 	"publisher": "takuyaw-w",
 	"license": "MIT",
 	"engines": {
-		"vscode": "1.38.1"
+		"vscode": "^1.38.0"
 	},
 	"categories": [
 		"Other"
