@@ -5,9 +5,6 @@
 	"version": "1.0.0",
 	"publisher": "takuyaw-w",
 	"license": "MIT",
-	"engines": {
-		"vscode": "^1.38.0"
-	},
 	"categories": [
 		"Other"
 	],
