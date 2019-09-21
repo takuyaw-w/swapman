@@ -2,9 +2,7 @@ import * as vscode from 'vscode';
 
 export function activate(context: vscode.ExtensionContext) {
 
-	console.log('Congratulations, your extension "swapman" is now active!');
-
-	let disposable = vscode.commands.registerCommand('extension.helloWorld', () => {
+	let disposable = vscode.commands.registerCommand('extension.swapman', () => {
 
 		const editor: vscode.TextEditor | undefined = vscode.window.activeTextEditor;
 		if (!editor) {
