@@ -5,6 +5,8 @@ Provides the ability to swap two selected variables and words.
 
 ## Usage
 
+![Example of use](./example.gif)
+
 ## Release Notes
 
 Users appreciate release notes as you update your extension.
