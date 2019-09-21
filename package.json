@@ -1,7 +1,7 @@
 {
 	"name": "swapman",
 	"displayName": "swapman",
-	"description": "",
+	"description": "Swap two variables.",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.38.0"
