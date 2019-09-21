@@ -11,7 +11,7 @@ export function activate(context: vscode.ExtensionContext) {
 
 		const doc: vscode.TextDocument = editor.document;
 		const selections: vscode.Selection[] = editor.selections;
-		if (selections.length > 1 && selections.length < 3) {
+		if (selections.length === 1 && selections.length > 3) {
 			vscode.window.showErrorMessage("Invalid number of selections.");
 			return;
 		}
