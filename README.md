@@ -1,4 +1,4 @@
-# swapman README
+# Swapman Readme!
 
 This is the README for your extension "swapman".
 
@@ -6,9 +6,3 @@ This is the README for your extension "swapman".
 
 Provides the ability to swap two words.
 ![Example of use](./example.gif)
-
-## Release Notes
-
-### 1.0.0
-
-Initial release.
